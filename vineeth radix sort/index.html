@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="16x16">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>RadixSort Algorithms</title>
+  </head>
+  <body>
+    <div class="nav">
+      <p>RadixSort</p>
+    </div>
+    <div class="content">
+      <canvas id="can0" width="1080" height="520"></canvas>
+      <p class="sizeNspeed">Size: </p>
+      <input autocomplete="off" type="range" min="2" max="7" value="4" class="slider" oninput="arraySizeSilder(this.value)">
+      
+      <button class="btn" onclick="arraySizeSilder(document.getElementsByClassName('slider')[0].value)">Generate New Array</button>
+    </div><br>
+    <center>
+      <p class="sizeNspeed">Speed: </p>
+      <input autocomplete="off" type="range" min="1" max="4" value="1" class="slider" oninput="frameRateSilder(this.value)">
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <p onclick="turnOnOff(true)" class="btn" id="btn1"><i class="fa fa-play" id="playToggler"></i></p>
+  </center><br><br>
+    <script src="script.js"></script>
+    <script src="mainScript.js"></script>
+    <script src="rainbow.js"></script>
+  </body>
+</html>
